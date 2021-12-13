@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
         int[] array = {3, 2, 1, 6, 5};
         String str = "aabccddefgghiijjkk";
         doubleChecker(str);
