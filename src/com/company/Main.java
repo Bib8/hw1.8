@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         int[] array = {3, 2, 1, 6, 5};
-
+        String str = "aabccddefgghiijjkk";
+        doubleChecker(str);
         reverse(array);
     }
 
@@ -71,6 +72,19 @@ public class Main {
         System.out.println("\"Потребуется дней: " + (calculationOfDeliveryTime) + "\"");
     }
 
+    public static void doubleChecker(String str) {
+        char[] array = str.toCharArray();
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 1; j < array.length ; j++) {
+                if (array[i] == array[j]){
+                    System.out.println("consist double");
+                    return;
+                }else System.out.println("no double consist");
+                break;
+            }
+        }
+    }
     public static void reverse(int[] intArray) {
         for(int i=intArray.length-1;i>=0;i--)
             System.out.print(intArray[i] + "  ");
